@@ -1,0 +1,143 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4B0082; /* Fondo morado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    height: 50px; /* Ajusta la altura según sea necesario */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#productos {
+    background-color: #f8f8f8;
+    padding: 20px;
+    height: 50vh; /* 50% de la altura de la ventana */
+    overflow-y: auto;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#productos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; /* Ajustar espacio entre productos */
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 20px); /* Ancho calculado para tres productos por fila */
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+    box-sizing: border-box; /* Incluir bordes y padding en el cálculo del tamaño */
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%; /* Imagen ocupará el 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba */
+}
+
+.product-card .card-container--info {
+    padding: 10px 0;
+}
+
+.product-card .card-container--info p {
+    margin: 5px 0;
+}
+
+.product-card .card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.product-card .card-container--value img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.no-productos {
+    text-align: center;
+    color: #777;
+    font-size: 1.2em;
+}
+
+#formulario {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 0.3;
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #4B0082;
+    color: white;
+    cursor: pointer;
+}
+
+form button[type="reset"] {
+    background-color: #555;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
